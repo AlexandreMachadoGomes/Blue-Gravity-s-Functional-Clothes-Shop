@@ -5,19 +5,30 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    private bool isWalking = false;
     private Animator animator;
 
     private int CurrentClothesIndex = 0;
     private List<ClothesData> availableClothing;
     public ClothesInventory clothesInventory;
     private GameObject currentClothes;
+    private Animator clothesAnimator;
+    Vector3 clothesSpriteOffset = new Vector3(0, -0.138f, 0);
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        
+
         availableClothing = clothesInventory.Clothes;
+
+        CurrentClothesIndex = clothesInventory.currentClothesIndex;
+        currentClothes = Instantiate(availableClothing[CurrentClothesIndex].clothes, transform.position + clothesSpriteOffset, Quaternion.identity);
+        currentClothes.transform.parent = transform;
+
+        animator = GetComponent<Animator>();
+        clothesAnimator = currentClothes.GetComponent<Animator>();
+
+
     }
 
     // Update is called once per frame
@@ -64,14 +75,18 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetFloat("MoveX", moveDir.x);
         animator.SetFloat("MoveY", moveDir.y);
+        clothesAnimator.SetFloat("MoveX", moveDir.x);
+        clothesAnimator.SetFloat("MoveY", moveDir.y);
 
         if (moveDir != Vector2.zero)
         {
             animator.SetBool("isIddle", false);
+            clothesAnimator.SetBool("isIddle", false);
         }
         else if (moveDir == Vector2.zero)
         {
             animator.SetBool("isIddle", true);
+            clothesAnimator.SetBool("isIddle", true);
         }
     }
 
@@ -89,8 +104,9 @@ public class PlayerController : MonoBehaviour
 
             CurrentClothesIndex = index;
 
-            currentClothes = Instantiate(availableClothing[index].clothes, transform.position, Quaternion.identity);
+            currentClothes = Instantiate(availableClothing[index].clothes, transform.position + clothesSpriteOffset, Quaternion.identity);
             currentClothes.transform.parent = transform;
+            clothesAnimator = currentClothes.GetComponent<Animator>();
         }
     }
 }

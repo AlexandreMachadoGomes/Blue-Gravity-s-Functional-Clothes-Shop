@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: ClothesStarter
   m_EditorClassIdentifier: 
-  Clothes: {fileID: 0}
+  clothes: {fileID: 5517819301249836978, guid: 0a00fa05c8db3bb49bf6fd935e9f83e5, type: 3}
   goldCost: 0
