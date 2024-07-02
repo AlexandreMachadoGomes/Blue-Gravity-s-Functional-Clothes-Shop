@@ -62,7 +62,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Shopkeeper.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\ClothesInventory.cs" />
+    <Compile Include="Assets\Scripts\SingleDialogue.cs" />
+    <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\ClothesData.cs" />
+    <Compile Include="Assets\Scripts\BackDoor.cs" />
+    <Compile Include="Assets\Scripts\DialaogueData.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ClothesTypeDataManager.cs" />
