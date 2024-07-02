@@ -31,11 +31,11 @@ public class BackDoor : DialaogueData
     {
         if (!triggerDifferentDialogue)
         {
-            dialogueManager.ManageDialogue(dialogue, this);
+            dialogueManager.ManageDialogue(dialogue, this, isCatDialogue);
         }
         else
         {
-            dialogueManager.ManageDialogue(differentDialogue, this);
+            dialogueManager.ManageDialogue(differentDialogue, this, isCatDialogue);
         }
         
     }

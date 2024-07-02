@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject dialogueUI;
     public GameObject textUI;
-    public TextMeshPro dialogueText;
+    public TextMeshProUGUI dialogueText;
 
     public float delayBetweenLetters = 0.1f;
 
@@ -20,6 +20,10 @@ public class DialogueManager : MonoBehaviour
     private DialaogueData currentDialogueData;
     private bool finishedCurrentDialogue = true;
 
+    private bool isCatDialogue = false;
+    public GameObject catIcon;
+    private Animator catAnimator;
+
     private bool displayTextInstantly = false;
 
     private Coroutine textCoroutine;
@@ -27,7 +31,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        catAnimator = catIcon.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,12 +44,18 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    public void ManageDialogue(SingleDialaogue dialogue, DialaogueData dialogueData)
+    public void ManageDialogue(SingleDialaogue dialogue, DialaogueData dialogueData, bool catDialogue)
     {
         currentDialogueData = dialogueData;
         isDialoguing = true;
         finishedCurrentDialogue = false;
         currentDialogue = dialogue;
+        isCatDialogue = catDialogue;
+
+        if (catDialogue)
+        {
+            catIcon.SetActive(true);
+        }
 
         dialogueUI.SetActive(true);
         textUI.SetActive(true);
@@ -60,7 +70,7 @@ public class DialogueManager : MonoBehaviour
 
     private void CheckForInputs()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (!finishedCurrentDialogue)
             {
@@ -68,7 +78,7 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                
+                FinishDialogue();
             }
         }
 
@@ -77,8 +87,12 @@ public class DialogueManager : MonoBehaviour
 
     private void FinishDialogue()
     {
-        currentDialogueData = null;
-        currentDialogue = null;
+        
+
+        if (isCatDialogue)
+        {
+            catIcon.SetActive(false);
+        }
 
         dialogueUI.SetActive(false);
         textUI.SetActive(false);
@@ -86,6 +100,10 @@ public class DialogueManager : MonoBehaviour
         finishedCurrentDialogue = false;
         isDialoguing = false;
         currentDialogueData.FinishedDialogue();
+
+        isCatDialogue = false;
+        currentDialogueData = null;
+        currentDialogue = null;
     }
 
 
@@ -97,6 +115,12 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator DisplayTextLetterByLetter(string text, float delayAfterPhrase)
     {
+        if (isCatDialogue)
+        {
+            catAnimator.SetBool("isTalking", true);
+        }
+
+
         dialogueText.text = "";  // Clear existing text
         foreach (char letter in text.ToCharArray())  // Iterate over each character
         {
@@ -110,6 +134,11 @@ public class DialogueManager : MonoBehaviour
 
             dialogueText.text += letter;  // Add each letter to the text
             yield return new WaitForSeconds(delayBetweenLetters);  // Wait before appending next letter
+        }
+
+        if (isCatDialogue)
+        {
+            catAnimator.SetBool("isTalking", false);
         }
 
         yield return new WaitForSeconds(delayAfterPhrase);

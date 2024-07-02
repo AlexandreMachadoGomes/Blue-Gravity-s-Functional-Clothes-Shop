@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "DialaogueData", menuName = "ScriptableObjects/DialaogueData", order = 3)]
 public abstract class DialaogueData : Interactable
 {
 
@@ -15,7 +14,7 @@ public abstract class DialaogueData : Interactable
     public SingleDialaogue dialogue;
     public SingleDialaogue differentDialogue;
 
-
+    public bool isCatDialogue = false;
 
     public abstract void StartedDialogue();
     public abstract void FinishedDialogue();

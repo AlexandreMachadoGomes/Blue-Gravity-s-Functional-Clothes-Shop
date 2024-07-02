@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKey(KeyCode.Space) && collision.CompareTag("Interactable"))
+        if (Input.GetKeyUp(KeyCode.Space) && collision.CompareTag("Interactable") && !isInteractionPaused)
         {
             collision.GetComponent<Interactable>().Interact();
             isInteractionPaused = true;
