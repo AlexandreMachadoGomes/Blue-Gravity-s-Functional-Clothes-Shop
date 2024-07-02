@@ -24,9 +24,9 @@ public class CameraController : MonoBehaviour
     {
         transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
 
-        if (transform.position.x > 0.9f)
+        if (transform.position.x > 0.2f)
         {
-            transform.position = new Vector3(0.9f, transform.position.y, -10);
+            transform.position = new Vector3(0.2f, transform.position.y, -10);
         }
         if (transform.position.x < -0.35f)
         {
