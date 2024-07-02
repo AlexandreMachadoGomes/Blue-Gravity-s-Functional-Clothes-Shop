@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody;
     private SpriteRenderer spriteRenderer;
 
-
+    private bool checkColliderForInteraction = false;
 
 
 
@@ -55,6 +55,12 @@ public class PlayerController : MonoBehaviour
 
     private void DetectInput()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            checkColliderForInteraction = true;
+        }
+
+
         if (Input.GetKey(KeyCode.UpArrow))
         {
             PlayerMovement(Vector2.up);
@@ -171,10 +177,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetKeyUp(KeyCode.Space) && collision.CompareTag("Interactable") && !isInteractionPaused)
+        if (checkColliderForInteraction && collision.CompareTag("Interactable") && !isInteractionPaused)
         {
             collision.GetComponent<Interactable>().Interact();
             isInteractionPaused = true;
+            checkColliderForInteraction = false;
+            PlayerMovement(Vector3.zero);
         }
     }
 

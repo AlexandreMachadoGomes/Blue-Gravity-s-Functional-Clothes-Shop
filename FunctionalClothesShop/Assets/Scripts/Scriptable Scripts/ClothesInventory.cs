@@ -7,6 +7,7 @@ using UnityEngine;
 public class ClothesInventory : ScriptableObject
 {
 
+    public SlotTypes slotType;
     public List<ClothesData> Clothes;
     public int currentClothesIndex = 0;
 

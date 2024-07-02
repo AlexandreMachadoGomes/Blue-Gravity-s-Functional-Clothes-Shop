@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
 
     private bool isDialoguing = false;
     private SingleDialaogue currentDialogue;
-    private DialaogueData currentDialogueData;
+    private DialogueInteractable currentDialogueData;
     private bool finishedCurrentDialogue = true;
 
     private bool isCatDialogue = false;
@@ -37,14 +37,14 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isDialoguing)
+        if (isDialoguing && !finishedCurrentDialogue)
         {
             CheckForInputs();
         }
     }
 
 
-    public void ManageDialogue(SingleDialaogue dialogue, DialaogueData dialogueData, bool catDialogue)
+    public void ManageDialogue(SingleDialaogue dialogue, DialogueInteractable dialogueData, bool catDialogue)
     {
         currentDialogueData = dialogueData;
         isDialoguing = true;
@@ -87,7 +87,7 @@ public class DialogueManager : MonoBehaviour
 
     private void FinishDialogue()
     {
-        
+        curentDialoguePhraseIndex = 0;
 
         if (isCatDialogue)
         {
@@ -151,8 +151,10 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            FinishDialogue();
             finishedCurrentDialogue = true;
         }
+
     }
 
 

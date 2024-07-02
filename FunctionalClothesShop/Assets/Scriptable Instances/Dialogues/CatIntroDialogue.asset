@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb051a40eb8ebeb43a87761767c49077, type: 3}
+  m_Name: CatIntroDialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Hello! Welcome to my humble shop!
+  - 'I know what you''re thinking, I''m a cat and all, how could I be able to manage
+    a shop?. '
+  - You leave that to me, and you do the shopping, ok?
+  - So, what will you have today?
+  endPhrasePauseTime:
+  - 0.5
+  - 0.5
+  - 0.5
+  - 0.5

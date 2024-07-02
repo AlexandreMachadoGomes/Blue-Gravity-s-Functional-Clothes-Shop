@@ -381,13 +381,14 @@
 "Assets/Scripts/BackDoor.cs"
 "Assets/Scripts/CameraController.cs"
 "Assets/Scripts/ClothesTypeDataManager.cs"
-"Assets/Scripts/DialaogueData.cs"
+"Assets/Scripts/DialogueInteractable.cs"
 "Assets/Scripts/DialogueManager.cs"
 "Assets/Scripts/Interactable.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scriptable Scripts/ClothesData.cs"
 "Assets/Scripts/Scriptable Scripts/ClothesInventory.cs"
 "Assets/Scripts/Shopkeeper.cs"
+"Assets/Scripts/ShopManager.cs"
 "Assets/Scripts/SingleDialogue.cs"
 -langversion:9.0
 /deterministic
