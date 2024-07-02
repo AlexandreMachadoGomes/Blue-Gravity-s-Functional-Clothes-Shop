@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
 
     private Animator animator;
+    private Rigidbody2D rigidBody;
+    private SpriteRenderer spriteRenderer;
 
     private int CurrentClothesIndex = 0;
     private List<ClothesData> availableClothing;
@@ -17,6 +19,9 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+        rigidBody = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         
 
         availableClothing = clothesInventory.Clothes;
@@ -25,8 +30,8 @@ public class PlayerController : MonoBehaviour
         currentClothes = Instantiate(availableClothing[CurrentClothesIndex].clothes, transform.position + clothesSpriteOffset, Quaternion.identity);
         currentClothes.transform.parent = transform;
 
-        animator = GetComponent<Animator>();
         clothesAnimator = currentClothes.GetComponent<Animator>();
+
 
 
     }
@@ -35,6 +40,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         DetectInput();
+        UpdateSpriteLayer();
     }
 
 
@@ -82,9 +88,11 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isIddle", false);
             clothesAnimator.SetBool("isIddle", false);
+            rigidBody.velocity = moveDir;
         }
         else if (moveDir == Vector2.zero)
         {
+            rigidBody.velocity = Vector2.zero;
             animator.SetBool("isIddle", true);
             clothesAnimator.SetBool("isIddle", true);
         }
@@ -108,5 +116,10 @@ public class PlayerController : MonoBehaviour
             currentClothes.transform.parent = transform;
             clothesAnimator = currentClothes.GetComponent<Animator>();
         }
+    }
+
+    private void UpdateSpriteLayer()
+    {
+        spriteRenderer.sortingOrder =  Mathf.RoundToInt(700 - 100 * transform.position.y) ;
     }
 }
