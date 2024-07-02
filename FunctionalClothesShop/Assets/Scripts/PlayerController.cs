@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
+//Update this enum  when creating new clothing slots. It is used when buying and selling clothes with the UI in the shop.
+
+
+
 
 public class PlayerController : MonoBehaviour
 {
     private enum ColliderDirection { UP, DOWN, RIGHT, LEFT};
-    private ColliderDirection colliderDir = ColliderDirection.DOWN;
+    private ColliderDirection lastMovementDir = ColliderDirection.DOWN;
     private BoxCollider2D interactableCollider;
 
     private bool isInteractionPaused = false;
@@ -14,14 +18,14 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rigidBody;
     private SpriteRenderer spriteRenderer;
-    private SpriteRenderer clothesSpriteRenderer;
 
-    private int CurrentClothesIndex = 0;
-    private List<ClothesData> availableClothing;
-    public ClothesInventory clothesInventory;
-    private GameObject currentClothes;
-    private Animator clothesAnimator;
-    Vector3 clothesSpriteOffset = new Vector3(0, -0.138f, 0);
+
+
+
+
+    public List<ClothesTypeDataManager> clothesSlotsData;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -32,10 +36,8 @@ public class PlayerController : MonoBehaviour
 
         interactableCollider = GetComponent<BoxCollider2D>();
 
-        availableClothing = clothesInventory.Clothes;
-
-        CurrentClothesIndex = clothesInventory.currentClothesIndex;
-        ChangeClothes(CurrentClothesIndex);
+        
+        
 
 
     }
@@ -56,9 +58,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.UpArrow))
         {
             PlayerMovement(Vector2.up);
-            if (colliderDir != ColliderDirection.UP)
+            if (lastMovementDir != ColliderDirection.UP)
             {
-                colliderDir = ColliderDirection.UP;
+                lastMovementDir = ColliderDirection.UP;
                 interactableCollider.size = new Vector2(.16f, .25f);
                 interactableCollider.offset = new Vector2(0, .05f);
             }
@@ -66,9 +68,9 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             PlayerMovement(Vector2.left);
-            if (colliderDir != ColliderDirection.LEFT)
+            if (lastMovementDir != ColliderDirection.LEFT)
             {
-                colliderDir = ColliderDirection.LEFT;
+                lastMovementDir = ColliderDirection.LEFT;
                 interactableCollider.size = new Vector2(.25f, .16f);
                 interactableCollider.offset = new Vector2(-0.18f, -0.1f);
             }
@@ -76,9 +78,9 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKey(KeyCode.RightArrow))
         {
             PlayerMovement(Vector2.right);
-            if (colliderDir != ColliderDirection.RIGHT)
+            if (lastMovementDir != ColliderDirection.RIGHT)
             {
-                colliderDir = ColliderDirection.RIGHT;
+                lastMovementDir = ColliderDirection.RIGHT;
                 interactableCollider.size = new Vector2(.25f, .16f);
                 interactableCollider.offset = new Vector2(0.18f, -0.1f);
             }
@@ -87,9 +89,9 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetKey(KeyCode.DownArrow))
         {
             PlayerMovement(Vector2.down);
-            if (colliderDir != ColliderDirection.DOWN)
+            if (lastMovementDir != ColliderDirection.DOWN)
             {
-                colliderDir = ColliderDirection.DOWN;
+                lastMovementDir = ColliderDirection.DOWN;
                 interactableCollider.size = new Vector2(.16f, .25f);
                 interactableCollider.offset = new Vector2(0, -.18f);
             }
@@ -106,52 +108,63 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetFloat("MoveX", moveDir.x);
         animator.SetFloat("MoveY", moveDir.y);
-        clothesAnimator.SetFloat("MoveX", moveDir.x);
-        clothesAnimator.SetFloat("MoveY", moveDir.y);
+
+        for (int i = 0; i < clothesSlotsData.Count; i++)
+        {
+            clothesSlotsData[i].clothesAnimator.SetFloat("MoveX", moveDir.x);
+            clothesSlotsData[i].clothesAnimator.SetFloat("MoveY", moveDir.y);
+        }
+        
 
         if (moveDir != Vector2.zero)
         {
-            animator.SetBool("isIddle", false);
-            clothesAnimator.SetBool("isIddle", false);
+            SetAnimationBools(false);
             rigidBody.velocity = moveDir;
         }
         else if (moveDir == Vector2.zero)
         {
             rigidBody.velocity = Vector2.zero;
-            animator.SetBool("isIddle", true);
-            clothesAnimator.SetBool("isIddle", true);
+            SetAnimationBools(true);
         }
     }
 
+    private void SetAnimationBools(bool isIddle)
+    {
+        animator.SetBool("isIddle", isIddle);
+        for (int i = 0; i < clothesSlotsData.Count; i++)
+        {
+            clothesSlotsData[i].clothesAnimator.SetBool("isIddle", isIddle);
+        }
+    }
+
+
+
+
+    //Adds clothes to the correct slot Manager by comparing their slot type using a enum.  
     public void AddClothes(ClothesData clothes)
     {
-        availableClothing.Add(clothes);
-    }
-
-    public void ChangeClothes(int index)
-    {
-        if (index <= availableClothing.Count)
+        for (int i = 0; i < clothesSlotsData.Count; i++)
         {
-            if (currentClothes != null)
+            if (clothesSlotsData[i].slotType == clothes.slotType)
             {
-                Destroy(currentClothes);
+                clothesSlotsData[i].AddClothes(clothes);
             }
-            currentClothes = null;
-
-            CurrentClothesIndex = index;
-
-            currentClothes = Instantiate(availableClothing[index].clothes, transform.position + clothesSpriteOffset, Quaternion.identity);
-            currentClothes.transform.parent = transform;
-            clothesAnimator = currentClothes.GetComponent<Animator>();
-            clothesSpriteRenderer = currentClothes.GetComponent<SpriteRenderer>();
-
         }
     }
 
+
+
+    
+
+
+    //updates the sorting order of the sprite to include realistic depth
     private void UpdateSpriteLayer()
     {
         spriteRenderer.sortingOrder = Mathf.RoundToInt(700 - 100 * transform.position.y);
-        clothesSpriteRenderer.sortingOrder = Mathf.RoundToInt(701 - 100 * transform.position.y);
+        for (int i = 0; i < clothesSlotsData.Count; i++)
+        {
+            clothesSlotsData[i].clothesSpriteRenderer.sortingOrder = Mathf.RoundToInt(701 +i - 100 * transform.position.y);
+        }
     }
 
 
@@ -176,12 +189,5 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public void ExitGameCleanup()
-    {
-        clothesInventory.Clothes = availableClothing;
-        clothesInventory.currentClothesIndex = CurrentClothesIndex;
-        EditorUtility.SetDirty(clothesInventory);
-        AssetDatabase.SaveAssets();
-
-    }
+   
 }

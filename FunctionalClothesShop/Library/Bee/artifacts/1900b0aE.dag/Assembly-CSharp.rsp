@@ -379,6 +379,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.25f1-x86_64/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.25f1-x86_64/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/CameraController.cs"
+"Assets/Scripts/ClothesTypeDataManager.cs"
 "Assets/Scripts/Interactable.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scriptable Scripts/ClothesData.cs"

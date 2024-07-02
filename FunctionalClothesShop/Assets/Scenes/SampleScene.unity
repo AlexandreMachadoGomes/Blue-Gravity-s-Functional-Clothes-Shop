@@ -166,6 +166,55 @@ Transform:
   - {fileID: 1499782201}
   m_Father: {fileID: 853545436}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &14564526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14564527}
+  - component: {fileID: 14564528}
+  m_Layer: 0
+  m_Name: HatSlotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &14564527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14564526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1233925910}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &14564528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14564526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da089fdeb4181a64886466965fa2ce03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothesInventory: {fileID: 11400000, guid: 640b13c263b052647a78534433a752fc, type: 2}
+  availableClothing: []
+  currentClothes: {fileID: 153021907}
+  player: {fileID: 0}
+  slotType: 1
 --- !u!1 &16190476
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +681,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fad63b3f45c82439e0eea800497ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clothesInventory: {fileID: 11400000, guid: a492f1535df1c41498668000c917bbd7, type: 2}
+  clothesSlotsData:
+  - {fileID: 400178312}
+  - {fileID: 578893524}
+  - {fileID: 14564528}
 --- !u!50 &153021913
 Rigidbody2D:
   serializedVersion: 4
@@ -2157,6 +2209,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &400178310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400178311}
+  - component: {fileID: 400178312}
+  m_Layer: 0
+  m_Name: RobeSlotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400178311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400178310}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1233925910}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400178312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400178310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da089fdeb4181a64886466965fa2ce03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothesInventory: {fileID: 11400000, guid: a492f1535df1c41498668000c917bbd7, type: 2}
+  availableClothing: []
+  currentClothes: {fileID: 153021907}
+  player: {fileID: 0}
+  slotType: 0
 --- !u!1 &428785003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2922,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 153021911}
+--- !u!1 &578893522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578893523}
+  - component: {fileID: 578893524}
+  m_Layer: 0
+  m_Name: HairSlotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &578893523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578893522}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1233925910}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578893524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578893522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da089fdeb4181a64886466965fa2ce03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothesInventory: {fileID: 11400000, guid: 640b13c263b052647a78534433a752fc, type: 2}
+  availableClothing: []
+  currentClothes: {fileID: 153021907}
+  player: {fileID: 0}
+  slotType: 1
 --- !u!1 &591497297
 GameObject:
   m_ObjectHideFlags: 0
@@ -5223,6 +5373,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1233925909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1233925910}
+  m_Layer: 0
+  m_Name: InventorySlotsManagers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1233925910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233925909}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.60314786, y: 2.800244, z: -0.01242933}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 400178311}
+  - {fileID: 578893523}
+  - {fileID: 14564527}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1238576087
 GameObject:
   m_ObjectHideFlags: 0
@@ -7980,6 +8164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 153021912}
   clothesCollection: {fileID: 11400000, guid: 7663534fc6572af49b48ea7b709b52d6, type: 2}
+  player: {fileID: 0}
 --- !u!1 &1643152940
 GameObject:
   m_ObjectHideFlags: 0
@@ -10608,3 +10793,4 @@ SceneRoots:
   - {fileID: 1489393870}
   - {fileID: 728076299}
   - {fileID: 1613192689}
+  - {fileID: 1233925910}

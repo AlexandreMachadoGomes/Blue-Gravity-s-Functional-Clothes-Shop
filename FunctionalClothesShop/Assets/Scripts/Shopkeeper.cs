@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Each new clothing in the shop should have a button that calls 
 public class Shopkeeper : Interactable
 {
 
     public ClothesInventory clothesCollection;
+
+    public PlayerController player;
 
     public override void Interact()
     {
@@ -20,9 +24,11 @@ public class Shopkeeper : Interactable
         playerController.EndInteractablePause();
     }
 
-    public void BuyClothes()
-    {
 
+
+    public void BuyClothes(ClothesData Clothes)
+    {
+        player.AddClothes(Clothes);
     }
 
     public void SellClothes()

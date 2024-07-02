@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
-  m_Name: ClothesStarter
+  m_Name: RobesBlue
   m_EditorClassIdentifier: 
-  clothes: {fileID: 5517819301249836978, guid: 0a00fa05c8db3bb49bf6fd935e9f83e5, type: 3}
+  clothes: {fileID: 5517819301249836978, guid: 04fc9f68bdda6ac4a8502d72bad32500, type: 3}
   goldCost: 0
+  clothesSpriteOffset: {x: 0, y: -0.138, z: 0}

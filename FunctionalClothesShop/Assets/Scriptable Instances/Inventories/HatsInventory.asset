@@ -10,10 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32cd8ad2aa814b2448d77681546d6713, type: 3}
-  m_Name: AllClothes
+  m_Name: HatsInventory
   m_EditorClassIdentifier: 
-  Clothes:
-  - {fileID: 11400000, guid: 80fb217aca6343745834278c47577275, type: 2}
-  - {fileID: 11400000, guid: b48fd57b7e40fb148b0b4104d314c6f7, type: 2}
-  - {fileID: 11400000, guid: ba7705bfd595ff84ab61faa5e9af1a1b, type: 2}
+  Clothes: []
   currentClothesIndex: 0
