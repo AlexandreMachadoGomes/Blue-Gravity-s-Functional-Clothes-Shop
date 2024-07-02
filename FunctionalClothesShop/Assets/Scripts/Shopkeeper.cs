@@ -35,12 +35,12 @@ public class Shopkeeper : DialogueInteractable
 
     public void BuyClothes(ClothesData Clothes)
     {
-        player.AddClothes(Clothes);
+        player.BuyClothes(Clothes);
     }
 
     public void SellClothes(ClothesData Clothes)
     {
-
+        player.SellClothes(Clothes);
     }
 
 

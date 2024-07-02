@@ -387,9 +387,10 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scriptable Scripts/ClothesData.cs"
 "Assets/Scripts/Scriptable Scripts/ClothesInventory.cs"
+"Assets/Scripts/Scriptable Scripts/Gold.cs"
+"Assets/Scripts/Scriptable Scripts/SingleDialogue.cs"
 "Assets/Scripts/Shopkeeper.cs"
 "Assets/Scripts/ShopManager.cs"
-"Assets/Scripts/SingleDialogue.cs"
 -langversion:9.0
 /deterministic
 /optimize+

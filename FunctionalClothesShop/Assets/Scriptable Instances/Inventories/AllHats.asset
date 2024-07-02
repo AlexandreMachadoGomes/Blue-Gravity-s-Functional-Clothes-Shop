@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotType: 1
   Clothes:
-  - {fileID: 11400000, guid: 80fb217aca6343745834278c47577275, type: 2}
-  - {fileID: 11400000, guid: b48fd57b7e40fb148b0b4104d314c6f7, type: 2}
-  - {fileID: 11400000, guid: ba7705bfd595ff84ab61faa5e9af1a1b, type: 2}
+  - {fileID: 11400000, guid: 2854ea0b8a0514e4f9a17b0ca73d2c61, type: 2}
+  - {fileID: 11400000, guid: f76dd35bee94edb46a035757410ae464, type: 2}
+  - {fileID: 11400000, guid: 5e3dafd0a41647e4fae81f96b83b6164, type: 2}
+  - {fileID: 11400000, guid: fc2fc4dc153c74743a6273b5a13053f2, type: 2}
+  - {fileID: 11400000, guid: e785cbaee2fa37045b878dd918d58aec, type: 2}
+  - {fileID: 11400000, guid: 3c7e6a896174bd14f8e295b1ba76f777, type: 2}
   currentClothesIndex: 0

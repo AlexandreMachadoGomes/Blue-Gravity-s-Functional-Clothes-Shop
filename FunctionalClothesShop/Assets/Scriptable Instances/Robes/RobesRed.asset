@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: RobesRed
   m_EditorClassIdentifier: 
+  itemName: 
+  slotType: 0
+  icon: {fileID: -1950931700, guid: 7080f637f65c19d4ba9858e5a49198c2, type: 3}
   clothes: {fileID: 5517819301249836978, guid: 2d9dc41176f7eeb41b5fa774bde0a40e, type: 3}
-  goldCost: 0
+  goldCost: 20
   clothesSpriteOffset: {x: 0, y: -0.138, z: 0}

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
-//Update this enum  when creating new clothing slots. It is used when buying and selling clothes with the UI in the shop.
+
 
 
 
@@ -19,11 +20,18 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody;
     private SpriteRenderer spriteRenderer;
 
+    //Used to detect if theres anything at the interaction zone only when the players inputs Space
     private bool checkColliderForInteraction = false;
 
-
+    public Gold goldScriptable;
 
     public List<ClothesTypeDataManager> clothesSlotsData;
+
+
+    public float interactTime = 0.1f;
+
+    //Keeps the timer for the interaction period after the player inputs Space
+    private Coroutine interactTimer;
 
 
 
@@ -58,6 +66,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             checkColliderForInteraction = true;
+            interactTimer = StartCoroutine(InteractionTimer());
         }
 
 
@@ -147,18 +156,39 @@ public class PlayerController : MonoBehaviour
 
 
     //Adds clothes to the correct slot Manager by comparing their slot type using a enum.  
-    public void AddClothes(ClothesData clothes)
+    public void BuyClothes(ClothesData clothes)
     {
         for (int i = 0; i < clothesSlotsData.Count; i++)
         {
             if (clothesSlotsData[i].slotType == clothes.slotType)
             {
                 clothesSlotsData[i].AddClothes(clothes);
+                HandleMoney(-clothes.goldCost);
+                return;
+            }
+        }
+
+    }
+
+
+    public void SellClothes(ClothesData clothes)
+    {
+        for (int i = 0; i < clothesSlotsData.Count; i++)
+        {
+            if (clothesSlotsData[i].slotType == clothes.slotType)
+            {
+                clothesSlotsData[i].RemoveClothes(clothes);
+                HandleMoney(+clothes.goldCost/2);
+                return;
             }
         }
     }
 
 
+    private void HandleMoney(float money)
+    {
+        goldScriptable.goldAmmount += money;
+    }
 
     
 
@@ -191,9 +221,17 @@ public class PlayerController : MonoBehaviour
         isInteractionPaused = false;
     }
 
+    private IEnumerator InteractionTimer()
+    {
+        yield return new WaitForSeconds(interactTime);
+        checkColliderForInteraction = false;
+    }
 
-
-
+    public void GameReset()
+    {
+        goldScriptable.goldAmmount = 0;
+        EditorUtility.SetDirty(goldScriptable);
+    }
 
 
 

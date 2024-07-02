@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32cd8ad2aa814b2448d77681546d6713, type: 3}
+  m_Name: AllHairs
+  m_EditorClassIdentifier: 
+  slotType: 2
+  Clothes:
+  - {fileID: 11400000, guid: e01b4027db06587438f7a1a52cd3e1d6, type: 2}
+  - {fileID: 11400000, guid: 0c91a1efa9fecac4b8b3ebd04c67124b, type: 2}
+  - {fileID: 11400000, guid: e1bf09b9c3de6d94c812b4fc235f80f1, type: 2}
+  - {fileID: 11400000, guid: 3a61ed8609f32a24e83ff36714e70f1a, type: 2}
+  - {fileID: 11400000, guid: 8b437b433dc149e4a873869910d4abd4, type: 2}
+  - {fileID: 11400000, guid: 11f139af12d984b41b51d959c3587ab7, type: 2}
+  currentClothesIndex: 0

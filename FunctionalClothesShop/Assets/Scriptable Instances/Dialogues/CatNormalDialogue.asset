@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: CatNormalDialogue
   m_EditorClassIdentifier: 
   dialogue:
-  - So, what will you have today?
+  - Welcome Back!
+  - What will you have today?
   endPhrasePauseTime:
+  - 0.5
   - 0.5

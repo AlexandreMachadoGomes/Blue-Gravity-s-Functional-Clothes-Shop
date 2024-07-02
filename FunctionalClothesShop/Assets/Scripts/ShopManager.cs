@@ -20,27 +20,18 @@ public class ShopManager : MonoBehaviour
 
     public List<ClothesInventory> ClothesToSell;
 
-    // Start is called before the first frame update
-    void Start()
+
+
+    public void BuyClothes(ClothesData clothes)
     {
-        
+        shopkeeper.BuyClothes(clothes);
+        PopulateInventory(clothes.slotType);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SellClothes(ClothesData clothes)
     {
-        
-    }
-
-
-    public void BuyClothes(ClothesData Clothes)
-    {
-        shopkeeper.BuyClothes(Clothes);
-    }
-
-    public void SellClothes(ClothesData Clothes)
-    {
-
+        shopkeeper.SellClothes(clothes);
+        PopulateInventory(clothes.slotType);
     }
 
 
@@ -70,6 +61,7 @@ public class ShopManager : MonoBehaviour
                                 {
                                     buttonObj = Instantiate(itemButtonPrefab, itemPanel);
                                     buttonObj.transform.GetChild(0).GetComponent<Image>().sprite = item.icon;
+                                    buttonObj.transform.GetChild(0).GetComponent<Image>().color = item.clothes.GetComponent<SpriteRenderer>().color;
                                     buttonObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.goldCost/2 +  "  Gold";
                                     buttonObj.GetComponentInChildren<Button>().onClick.AddListener(() => SellClothes(item));
 
@@ -82,6 +74,7 @@ public class ShopManager : MonoBehaviour
                     {
                         buttonObj = Instantiate(itemButtonPrefab, itemPanel);
                         buttonObj.transform.GetChild(0).GetComponent<Image>().sprite = item.icon;
+                        buttonObj.transform.GetChild(0).GetComponent<Image>().color = item.clothes.GetComponent<SpriteRenderer>().color;
                         buttonObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.goldCost + "  Gold";
 
                         buttonObj.GetComponentInChildren<Button>().onClick.AddListener(() => BuyClothes(item));
@@ -119,7 +112,7 @@ public class ShopManager : MonoBehaviour
     {
         for (int i = 0; i < itemPanel.childCount; i++)
         {
-            Destroy(itemPanel.GetChild(0));
+            Destroy(itemPanel.GetChild(i).gameObject);
         } 
     }
 

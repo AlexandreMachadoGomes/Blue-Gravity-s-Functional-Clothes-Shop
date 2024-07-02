@@ -47,6 +47,16 @@ public class ClothesTypeDataManager : MonoBehaviour
         availableClothing.Add(clothes);
     }
 
+
+    public void RemoveClothes(ClothesData clothes)
+    {
+        if (availableClothing[currentClothesIndex] == clothes)
+        {
+            ChangeCurrentClothesSlot(0);
+        }
+        availableClothing.Remove(clothes);
+    }
+
     //destroys the previous instance of clothing of its slot and creates a new instance of the new clothing
     public void ChangeCurrentClothesSlot(int index)
     {
