@@ -211,9 +211,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothesInventory: {fileID: 11400000, guid: 640b13c263b052647a78534433a752fc, type: 2}
-  availableClothing:
-  - {fileID: 0}
+  availableClothing: []
   currentClothes: {fileID: 0}
+  currentClothesData: {fileID: 0}
+  clothesAnimator: {fileID: 0}
   player: {fileID: 153021911}
   slotType: 1
   initialClothes: {fileID: 11400000, guid: 2854ea0b8a0514e4f9a17b0ca73d2c61, type: 2}
@@ -4482,9 +4483,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothesInventory: {fileID: 11400000, guid: a492f1535df1c41498668000c917bbd7, type: 2}
-  availableClothing:
-  - {fileID: 0}
+  availableClothing: []
   currentClothes: {fileID: 0}
+  currentClothesData: {fileID: 0}
+  clothesAnimator: {fileID: 0}
   player: {fileID: 153021911}
   slotType: 0
   initialClothes: {fileID: 11400000, guid: ba7705bfd595ff84ab61faa5e9af1a1b, type: 2}
@@ -6172,9 +6174,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clothesInventory: {fileID: 11400000, guid: 2ce9e19cda60ea042b6f74512b9dde20, type: 2}
-  availableClothing:
-  - {fileID: 0}
+  availableClothing: []
   currentClothes: {fileID: 0}
+  currentClothesData: {fileID: 0}
+  clothesAnimator: {fileID: 0}
   player: {fileID: 153021911}
   slotType: 2
   initialClothes: {fileID: 11400000, guid: e01b4027db06587438f7a1a52cd3e1d6, type: 2}

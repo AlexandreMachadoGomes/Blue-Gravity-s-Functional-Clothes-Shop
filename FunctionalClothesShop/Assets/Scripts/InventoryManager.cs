@@ -41,7 +41,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (player.clothesSlotsData[i].slotType == clothes.slotType)
             {
-                
+                player.clothesSlotsData[i].ChangeCurrentClothesSlot(player.clothesSlotsData[i].initialClothes);
             }
         }
     }
@@ -54,16 +54,41 @@ public class InventoryManager : MonoBehaviour
         GameObject buttonObj;
 
 
-        //checks if the player already has the item the shop will be displaying and hijacks the behaviour
-
-
         for (int j = 0; j < player.clothesSlotsData.Count; j++)
         {
             if (player.clothesSlotsData[j].slotType == slotType)
-            { 
+            {
+
+                //Inventory includes the initialClothes AKA underwear and no hat
+
+                if (player.clothesSlotsData[j].currentClothesData == player.clothesSlotsData[j].initialClothes)
+                {
+                    ClothesData initialClothes = player.clothesSlotsData[j].initialClothes;
+
+                    buttonObj = Instantiate(itemButtonPrefab, itemPanel);
+                    buttonObj.transform.GetChild(0).GetComponent<Image>().sprite = initialClothes.icon;
+                    buttonObj.transform.GetChild(0).GetComponent<Image>().color = initialClothes.clothes.GetComponent<SpriteRenderer>().color;
+                    buttonObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = initialClothes.goldCost + "  Gold";
+                    buttonObj.GetComponentInChildren<Button>().onClick.AddListener(() => UnequipClothes(initialClothes));
+                    buttonObj.transform.GetChild(2).gameObject.SetActive(true);
+                }
+                else
+                {
+                    ClothesData initialClothes = player.clothesSlotsData[j].initialClothes;
+
+                    buttonObj = Instantiate(itemButtonPrefab, itemPanel);
+                    buttonObj.transform.GetChild(0).GetComponent<Image>().sprite = initialClothes.icon;
+                    buttonObj.transform.GetChild(0).GetComponent<Image>().color = initialClothes.clothes.GetComponent<SpriteRenderer>().color;
+                    buttonObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = initialClothes.goldCost + "  Gold";
+                    buttonObj.GetComponentInChildren<Button>().onClick.AddListener(() => EquipClothes(initialClothes));
+                }
+
+
+
                 foreach (var item in player.clothesSlotsData[j].availableClothing)
                 {
-                    if (player.clothesSlotsData[j].currentClothes == item)
+                    //checks if the player has the item equipped and marks it
+                    if (player.clothesSlotsData[j].currentClothesData == item)
                     {
                         buttonObj = Instantiate(itemButtonPrefab, itemPanel);
                         buttonObj.transform.GetChild(0).GetComponent<Image>().sprite = item.icon;

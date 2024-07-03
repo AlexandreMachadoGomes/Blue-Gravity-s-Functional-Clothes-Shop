@@ -127,11 +127,14 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerMovement(Vector2 moveDir)
     {
+        
+
         animator.SetFloat("MoveX", moveDir.x);
         animator.SetFloat("MoveY", moveDir.y);
 
         for (int i = 0; i < clothesSlotsData.Count; i++)
         {
+
             clothesSlotsData[i].clothesAnimator.SetFloat("MoveX", moveDir.x);
             clothesSlotsData[i].clothesAnimator.SetFloat("MoveY", moveDir.y);
         }
@@ -205,6 +208,8 @@ public class PlayerController : MonoBehaviour
         spriteRenderer.sortingOrder = Mathf.RoundToInt(700 - 100 * transform.position.y);
         for (int i = 0; i < clothesSlotsData.Count; i++)
         {
+
+
             clothesSlotsData[i].clothesSpriteRenderer.sortingOrder = Mathf.RoundToInt(701 +i - 100 * transform.position.y);
         }
     }

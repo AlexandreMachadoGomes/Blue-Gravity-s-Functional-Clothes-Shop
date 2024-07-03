@@ -17,7 +17,7 @@ public class ClothesTypeDataManager : MonoBehaviour
     public ClothesInventory clothesInventory;
     public List<ClothesData> availableClothing;
     public GameObject currentClothes;
-    [System.NonSerialized]
+    public ClothesData currentClothesData;
     public Animator clothesAnimator;
     [System.NonSerialized]
     public SpriteRenderer clothesSpriteRenderer;
@@ -34,6 +34,10 @@ public class ClothesTypeDataManager : MonoBehaviour
         availableClothing = clothesInventory.Clothes;
 
         ChangeCurrentClothesSlot(initialClothes);
+
+        
+
+        
     }
 
     
@@ -47,7 +51,7 @@ public class ClothesTypeDataManager : MonoBehaviour
 
     public void RemoveClothes(ClothesData clothes)
     {
-        if (currentClothes == clothes)
+        if (currentClothesData == clothes)
         {
             ChangeCurrentClothesSlot(initialClothes);
         }
@@ -57,7 +61,8 @@ public class ClothesTypeDataManager : MonoBehaviour
     //destroys the previous instance of clothing of its slot and creates a new instance of the new clothing
     public void ChangeCurrentClothesSlot(ClothesData clothes)
     {
-        if (availableClothing.Contains(clothes))
+
+        if (availableClothing.Contains(clothes) || clothes == initialClothes)
         {
             if (currentClothes != null)
             {
@@ -67,10 +72,12 @@ public class ClothesTypeDataManager : MonoBehaviour
 
 
             currentClothes = Instantiate(clothes.clothes, player.position, Quaternion.identity);
+            currentClothesData = clothes;
             currentClothes.transform.parent = player;
             clothesAnimator = currentClothes.GetComponent<Animator>();
             clothesSpriteRenderer = currentClothes.GetComponent<SpriteRenderer>();
-            player.GetComponent<PlayerController>().PlayerMovement(Vector3.zero);
+            player.GetComponent<PlayerController>().PlayerMovement(Vector2.down);
+            player.GetComponent<PlayerController>().PlayerMovement(Vector2.zero);
         }
     }
 
