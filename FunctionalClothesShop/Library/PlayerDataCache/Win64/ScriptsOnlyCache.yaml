@@ -1,20 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - BackDoor
     - CameraController
     - ClothesData
     - ClothesInventory
     - ClothesTypeDataManager
     - DialogueManager
     - GameReseter
+    - GameStartMessage
     - Gold
     - InventoryManager
     - PlayerController
     - ShopManager
     - Shopkeeper
+    - SimpleInteractable
     - SingleDialaogue
     - TableInteractable
+    - TwoDialoguesInteractable
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -48,14 +50,15 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -157,8 +160,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 70
@@ -180,51 +181,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16714}
     - Class: 114
-      Script: {instanceID: 17442}
+      Script: {instanceID: 17074}
     - Class: 114
-      Script: {instanceID: 17992}
+      Script: {instanceID: 17444}
     - Class: 114
-      Script: {instanceID: 18182}
+      Script: {instanceID: 17994}
     - Class: 114
-      Script: {instanceID: 18256}
+      Script: {instanceID: 18184}
     - Class: 114
-      Script: {instanceID: 18594}
+      Script: {instanceID: 18258}
     - Class: 114
-      Script: {instanceID: 18724}
+      Script: {instanceID: 18596}
     - Class: 114
-      Script: {instanceID: 18848}
+      Script: {instanceID: 18726}
     - Class: 114
-      Script: {instanceID: 19368}
+      Script: {instanceID: 18850}
     - Class: 114
-      Script: {instanceID: 19670}
+      Script: {instanceID: 18980}
     - Class: 114
-      Script: {instanceID: 19884}
+      Script: {instanceID: 19372}
     - Class: 114
-      Script: {instanceID: 20204}
+      Script: {instanceID: 19674}
     - Class: 114
-      Script: {instanceID: 20696}
+      Script: {instanceID: 19888}
     - Class: 114
-      Script: {instanceID: 21124}
+      Script: {instanceID: 20208}
     - Class: 114
-      Script: {instanceID: 21824}
+      Script: {instanceID: 20700}
     - Class: 114
-      Script: {instanceID: 22038}
+      Script: {instanceID: 20760}
     - Class: 114
-      Script: {instanceID: 22444}
+      Script: {instanceID: 21130}
     - Class: 114
-      Script: {instanceID: 22956}
+      Script: {instanceID: 21830}
     - Class: 114
-      Script: {instanceID: 23292}
+      Script: {instanceID: 22044}
     - Class: 114
-      Script: {instanceID: 23826}
+      Script: {instanceID: 22414}
     - Class: 114
-      Script: {instanceID: 23876}
+      Script: {instanceID: 22452}
     - Class: 114
-      Script: {instanceID: 24176}
+      Script: {instanceID: 22964}
     - Class: 114
-      Script: {instanceID: 63896}
+      Script: {instanceID: 23300}
     - Class: 114
-      Script: {instanceID: 87508}
+      Script: {instanceID: 24180}
+    - Class: 114
+      Script: {instanceID: 24786}
+    - Class: 114
+      Script: {instanceID: 24790}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -316,6 +321,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseExitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a32048f8335f27bd766089245ee02134
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TwoDialoguesInteractable
   - hash:
       serializedVersion: 2
       Hash: b12640dfdb5966813e9dd838893e6c4a
@@ -588,6 +599,12 @@ ScriptsOnlyBuild:
     className: UnityOnSelectMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 3ee666d7a963abc0277691396f523536
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameStartMessage
+  - hash:
+      serializedVersion: 2
       Hash: 5b8b7230ad968399f6726aa1269dcdcb
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -666,10 +683,10 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: 5cb13f748d10aeac662da152825af5b8
+      Hash: 946838cafb27156e1824859325bf3ed9
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: BackDoor
+    className: SimpleInteractable
   - hash:
       serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
@@ -790,6 +807,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 4690822dd292f22175f73ea0074c085b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameReseter
   - hash:
       serializedVersion: 2
       Hash: f2098fcd8ee983a05ec192f63904298f
@@ -952,6 +975,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f0ff17f5bf27d1d250fd09e359719958
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TableInteractable
   - hash:
       serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
@@ -1182,18 +1211,6 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 49b92505625867ef03ff3a7d1212efb8
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PlayerController
-  - hash:
-      serializedVersion: 2
-      Hash: 304f11863fbf12ae324b99af9c9b0ebc
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ShopManager
-  - hash:
-      serializedVersion: 2
       Hash: 9a174471d4db2c0c6d3ac47d2f818db1
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1302,16 +1319,16 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 4690822dd292f22175f73ea0074c085b
+      Hash: f11bebadee216ae2b334c48164d2386f
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: GameReseter
+    className: ShopManager
   - hash:
       serializedVersion: 2
-      Hash: f0ff17f5bf27d1d250fd09e359719958
+      Hash: 49b92505625867ef03ff3a7d1212efb8
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: TableInteractable
+    className: PlayerController
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainScene.unity
