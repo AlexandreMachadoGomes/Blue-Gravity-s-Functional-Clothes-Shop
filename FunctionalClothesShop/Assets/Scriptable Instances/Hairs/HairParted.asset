@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: HairParted
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Parted Hair
   slotType: 2
   icon: {fileID: -1152388962, guid: 0321640e0899be643a3d97baa946f236, type: 3}
   clothes: {fileID: 7169907175692208267, guid: c2c6549e4b0725047a87ddc0c7fd5dd1, type: 3}
   goldCost: 10
-  clothesSpriteOffset: {x: 0, y: -0.138, z: 0}

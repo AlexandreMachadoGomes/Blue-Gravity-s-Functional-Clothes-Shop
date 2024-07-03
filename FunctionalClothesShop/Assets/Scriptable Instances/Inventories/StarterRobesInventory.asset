@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: StarterRobesInventory
   m_EditorClassIdentifier: 
   slotType: 0
-  Clothes:
-  - {fileID: 11400000, guid: ba7705bfd595ff84ab61faa5e9af1a1b, type: 2}
+  Clothes: []
   currentClothesIndex: 0

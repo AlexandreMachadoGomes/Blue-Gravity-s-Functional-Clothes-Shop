@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: HairPonytailGreen
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Green Ponytail Hair
   slotType: 2
   icon: {fileID: 554157052, guid: 2b29ec5f209f60542b02b04f53d319d3, type: 3}
   clothes: {fileID: 7169907175692208267, guid: 03e8a807c28cbab428b7764123475142, type: 3}
   goldCost: 30
-  clothesSpriteOffset: {x: 0, y: -0.138, z: 0}

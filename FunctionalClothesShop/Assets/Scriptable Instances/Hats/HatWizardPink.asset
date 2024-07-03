@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: HatWizardPink
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Pink Wizard Hat
   slotType: 1
   icon: {fileID: -406924376, guid: e95703b801e1bb444a216f79679639cd, type: 3}
   clothes: {fileID: 7169907175692208267, guid: de480aa95f87260429f3c7011df914dd, type: 3}
   goldCost: 20
-  clothesSpriteOffset: {x: 0, y: -0.138, z: 0}

@@ -16,5 +16,5 @@ MonoBehaviour:
   - The door seems to be locked....
   - Maybe don't go wander in there?
   endPhrasePauseTime:
-  - 0.5
-  - 0.5
+  - 1.5
+  - 1.5

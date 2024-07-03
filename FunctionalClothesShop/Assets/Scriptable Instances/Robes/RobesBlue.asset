@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: RobesBlue
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Blue Robes
   slotType: 0
   icon: {fileID: 21300000, guid: 2278c9c8fed91714890c0ee6a66f95e3, type: 2}
   clothes: {fileID: 5517819301249836978, guid: 04fc9f68bdda6ac4a8502d72bad32500, type: 3}

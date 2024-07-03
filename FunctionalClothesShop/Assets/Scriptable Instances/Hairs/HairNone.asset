@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: HairNone
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: No Hair
   slotType: 2
   icon: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
   clothes: {fileID: 7169907175692208267, guid: d189e24011fd03e429b6aba099f28bd7, type: 3}

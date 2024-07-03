@@ -60,20 +60,24 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.25f1-x86_64\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Managers\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Interactables\DialogueInteractable.cs" />
+    <Compile Include="Assets\Scripts\Interactables\SimpleInteractable.cs" />
+    <Compile Include="Assets\Scripts\Managers\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\SingleDialogue.cs" />
-    <Compile Include="Assets\Scripts\DialogueInteractable.cs" />
-    <Compile Include="Assets\Scripts\Shopkeeper.cs" />
+    <Compile Include="Assets\Scripts\Managers\ShopManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\Shopkeeper.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\ClothesInventory.cs" />
-    <Compile Include="Assets\Scripts\InventoryManager.cs" />
-    <Compile Include="Assets\Scripts\ShopManager.cs" />
-    <Compile Include="Assets\Scripts\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\ClothesTypeDataManager.cs" />
+    <Compile Include="Assets\Scripts\Interactables\TwoDialoguesInteractable.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\ClothesData.cs" />
-    <Compile Include="Assets\Scripts\BackDoor.cs" />
+    <Compile Include="Assets\Scripts\Interactables\TableInteractable.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\Gold.cs" />
-    <Compile Include="Assets\Scripts\Interactable.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\ClothesTypeDataManager.cs" />
-    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Interactables\GameReseter.cs" />
+    <Compile Include="Assets\Scripts\Managers\DialogueManager.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Interactable.cs" />
+    <Compile Include="Assets\Scripts\Managers\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Interactables\GameStartMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

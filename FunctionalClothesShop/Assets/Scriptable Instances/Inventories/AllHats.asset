@@ -20,4 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fc2fc4dc153c74743a6273b5a13053f2, type: 2}
   - {fileID: 11400000, guid: e785cbaee2fa37045b878dd918d58aec, type: 2}
   - {fileID: 11400000, guid: 3c7e6a896174bd14f8e295b1ba76f777, type: 2}
+  - {fileID: 11400000, guid: e36dfa5e187603e4eaf09bf0e7aa24bf, type: 2}
   currentClothesIndex: 0

@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: HatLeather
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Leather Hat
   slotType: 1
   icon: {fileID: -1921522069, guid: 59dc56a6867db094cb5bd0dbd900ef51, type: 3}
   clothes: {fileID: 7169907175692208267, guid: 5bf0756e96233a84f96588ba490b1a75, type: 3}
   goldCost: 30
-  clothesSpriteOffset: {x: 0, y: -0.138, z: 0}

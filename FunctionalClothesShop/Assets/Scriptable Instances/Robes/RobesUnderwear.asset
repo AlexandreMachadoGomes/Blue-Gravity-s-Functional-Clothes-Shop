@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2881485acd0d60a469ee4df47bb88aa0, type: 3}
   m_Name: RobesUnderwear
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Underwear
   slotType: 0
   icon: {fileID: 783156139, guid: f813a132ad2695347b5e26839dfb858b, type: 3}
   clothes: {fileID: 5517819301249836978, guid: 0c28c1805ac71104f8f9a806e7166651, type: 3}
