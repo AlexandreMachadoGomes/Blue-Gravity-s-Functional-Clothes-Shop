@@ -384,6 +384,7 @@
 "Assets/Scripts/DialogueInteractable.cs"
 "Assets/Scripts/DialogueManager.cs"
 "Assets/Scripts/Interactable.cs"
+"Assets/Scripts/InventoryManager.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/Scriptable Scripts/ClothesData.cs"
 "Assets/Scripts/Scriptable Scripts/ClothesInventory.cs"

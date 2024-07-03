@@ -14,8 +14,6 @@ public enum SlotTypes { ROBE, HAT, HAIR };
 public class ClothesTypeDataManager : MonoBehaviour
 {
 
-    [System.NonSerialized]
-    public int currentClothesIndex = 0;
     public ClothesInventory clothesInventory;
     public List<ClothesData> availableClothing;
     public GameObject currentClothes;
@@ -27,7 +25,7 @@ public class ClothesTypeDataManager : MonoBehaviour
     public Transform player;
     public SlotTypes slotType;
 
-
+    public ClothesData initialClothes;
 
 
 
@@ -35,8 +33,7 @@ public class ClothesTypeDataManager : MonoBehaviour
     {
         availableClothing = clothesInventory.Clothes;
 
-        currentClothesIndex = clothesInventory.currentClothesIndex;
-        ChangeCurrentClothesSlot(currentClothesIndex);
+        ChangeCurrentClothesSlot(initialClothes);
     }
 
     
@@ -50,17 +47,17 @@ public class ClothesTypeDataManager : MonoBehaviour
 
     public void RemoveClothes(ClothesData clothes)
     {
-        if (availableClothing[currentClothesIndex] == clothes)
+        if (currentClothes == clothes)
         {
-            ChangeCurrentClothesSlot(0);
+            ChangeCurrentClothesSlot(initialClothes);
         }
         availableClothing.Remove(clothes);
     }
 
     //destroys the previous instance of clothing of its slot and creates a new instance of the new clothing
-    public void ChangeCurrentClothesSlot(int index)
+    public void ChangeCurrentClothesSlot(ClothesData clothes)
     {
-        if (index <= availableClothing.Count)
+        if (availableClothing.Contains(clothes))
         {
             if (currentClothes != null)
             {
@@ -68,13 +65,12 @@ public class ClothesTypeDataManager : MonoBehaviour
             }
             currentClothes = null;
 
-            currentClothesIndex = index;
 
-            currentClothes = Instantiate(availableClothing[index].clothes, player.position + availableClothing[index].clothesSpriteOffset, Quaternion.identity);
+            currentClothes = Instantiate(clothes.clothes, player.position, Quaternion.identity);
             currentClothes.transform.parent = player;
             clothesAnimator = currentClothes.GetComponent<Animator>();
             clothesSpriteRenderer = currentClothes.GetComponent<SpriteRenderer>();
-
+            player.GetComponent<PlayerController>().PlayerMovement(Vector3.zero);
         }
     }
 
@@ -83,7 +79,6 @@ public class ClothesTypeDataManager : MonoBehaviour
     public void ExitGameCleanup()
     {
         clothesInventory.Clothes = availableClothing;
-        clothesInventory.currentClothesIndex = currentClothesIndex;
         EditorUtility.SetDirty(clothesInventory);
         AssetDatabase.SaveAssets();
 

@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hair2WalkingBack
+      name: Hair2WalkingBack5
       rect:
         serializedVersion: 2
         x: 256
@@ -725,11 +725,11 @@ TextureImporter:
       Hair2Front: -1152388962
       Hair2Left: 1479842954
       Hair2Right: 1998379777
-      Hair2WalkingBack: -1631239575
       Hair2WalkingBack1: -1435714166
       Hair2WalkingBack2: -1440364009
       Hair2WalkingBack3: -1640640245
       Hair2WalkingBack4: -136697032
+      Hair2WalkingBack5: -1631239575
       Hair2WalkingBack6: -842173244
       Hair2WalkingFront1: -1059495870
       Hair2WalkingFront2: 593167363

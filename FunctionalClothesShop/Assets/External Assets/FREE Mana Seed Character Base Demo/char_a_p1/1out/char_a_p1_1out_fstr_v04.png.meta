@@ -123,589 +123,589 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IddleRobeFront
+      name: RobesFront
       rect:
         serializedVersion: 2
-        x: 24
-        y: 467
-        width: 16
-        height: 20
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 612fe2e8b9964d4438c496df6d6b43ba
-      internalID: -1950931700
+      spriteID: 93b9bffe446629f4190227e5b3701904
+      internalID: -1962879817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IddleRobeBack
+      name: RobesBack
       rect:
         serializedVersion: 2
-        x: 24
-        y: 404
-        width: 16
-        height: 20
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e2bce864318802448be6c738f508ea1
-      internalID: -944460464
+      spriteID: f2e7b58e7968e6048aa287f0629fd448
+      internalID: 1389800442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IddleRobeRight
+      name: RobesRight
       rect:
         serializedVersion: 2
-        x: 24
-        y: 339
-        width: 16
-        height: 20
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5213e3caefe357842ae1723997561782
-      internalID: -770183548
+      spriteID: 9c199e73fd411e949b89d8f59626a0e2
+      internalID: 119487990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IddleRobeLeft
+      name: RobesLeft
       rect:
         serializedVersion: 2
-        x: 24
-        y: 275
-        width: 16
-        height: 20
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eebcdfff78ed9004b9ca00670e867282
-      internalID: -314096018
+      spriteID: 5d41fde67152e0843badfda3dadd23d2
+      internalID: 979023412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown1
+      name: RobesWalkingFront1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 210
-        width: 16
-        height: 21
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1b1e6dc65bcaf14da7ffb337bbbd35e
-      internalID: 1579330753
+      spriteID: 80624a1e6e3bdf440b4edbd8ddd52291
+      internalID: 1950522643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown2
+      name: RobesWalkingFront2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 210
-        width: 16
-        height: 21
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e87ec0fd8a0f3eb459c8de6b10a08062
-      internalID: 1045325302
+      spriteID: 2507c0382fde48240b5c205eb22d3cd0
+      internalID: 371075715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown3
+      name: RobesWalkingFront3
       rect:
         serializedVersion: 2
-        x: 152
-        y: 210
-        width: 16
-        height: 20
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db9bd1f8de69a4f4a8108a64e888589c
-      internalID: -1187076968
+      spriteID: baec101cb99169649bd5712e31535055
+      internalID: -1287774614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown4
+      name: RobesWalkingFront4
       rect:
         serializedVersion: 2
-        x: 217
-        y: 210
-        width: 16
-        height: 20
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42c22a032bbd6804fa898b627d19132c
-      internalID: -1699086374
+      spriteID: e5387d9a16bf2474d8089235768f63eb
+      internalID: -2106428519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown5
+      name: RobesWalkingFront5
       rect:
         serializedVersion: 2
-        x: 280
-        y: 210
-        width: 16
-        height: 20
+        x: 256
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31d07f8228716247b75a9688ce1543d
-      internalID: -311590477
+      spriteID: 5aed7c4a2978e4c40ad281e4d19d8d30
+      internalID: -846269162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkDown6
+      name: RobesWalkingFront6
       rect:
         serializedVersion: 2
-        x: 344
-        y: 210
-        width: 16
-        height: 20
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b7fdd85e9599ff49b301addd469f68c
-      internalID: 1798149250
+      spriteID: 23bb13be95324274e9fd4496ab86291d
+      internalID: 1039392687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp1
+      name: RobesWalkingBack1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 147
-        width: 16
-        height: 20
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b33b527f0db9244ba5f9bfafc0fa726
-      internalID: -421910985
+      spriteID: 96269a91ecb904246888dbce8bc0d12d
+      internalID: 2054400701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp2
+      name: RobesWalkingBack2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 147
-        width: 16
-        height: 20
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a83d554172f91449848d011aabc25e1
-      internalID: -2102978718
+      spriteID: 0ed08708054b64f48a287e337daeb0f1
+      internalID: 865455151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp3
+      name: RobesWalkingBack3
       rect:
         serializedVersion: 2
-        x: 151
-        y: 147
-        width: 17
-        height: 21
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3dadd2c568e6fd4a986193e140226c2
-      internalID: -1535488616
+      spriteID: d0807d79cf96d2044b2680286e8ed7a7
+      internalID: 1784848583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp4
+      name: RobesWalkingBack4
       rect:
         serializedVersion: 2
-        x: 215
-        y: 147
-        width: 18
-        height: 20
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b21241d7e1aaacd4c92fa9a036e6e026
-      internalID: -386226290
+      spriteID: fc2e4b882023a2e42bd2fcff086410f3
+      internalID: -579156429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp5
+      name: RobesWalkingBack5
       rect:
         serializedVersion: 2
-        x: 279
-        y: 147
-        width: 17
-        height: 20
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc86df019eca3ab458f6a6cdaa11b86f
-      internalID: 1773572587
+      spriteID: ff00ccea63217f34bb0ca08065c96dc0
+      internalID: 456739876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp6
+      name: RobesWalkingBack6
       rect:
         serializedVersion: 2
-        x: 344
-        y: 147
-        width: 17
-        height: 20
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea54638cdf9f3e54eaef53ee1cf1f293
-      internalID: -1953659060
+      spriteID: 6306a705924a9dd47abe05b702baf79a
+      internalID: 1372066876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight1
+      name: RobesWalkingRight1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 82
-        width: 16
-        height: 22
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eeacf9e141495b4d860eb72fd398dcd
-      internalID: -246314241
+      spriteID: ad79d102ca40dcd4884865ba507ed8b8
+      internalID: 1909992787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight2
+      name: RobesWalkingRight2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 82
-        width: 16
-        height: 22
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f45b63edb8cb4246a873e5b78d8cf41
-      internalID: -1427154763
+      spriteID: 79b2bfc8194bb824cb2cce626bcd9aab
+      internalID: -569953600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight3
+      name: RobesWalkingRight3
       rect:
         serializedVersion: 2
-        x: 153
-        y: 82
-        width: 17
-        height: 22
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24ddfe80a05a3ec48b0b675fd4a3a608
-      internalID: 1608773829
+      spriteID: e8a04f02a74a09a4f8c82beae2b0b97c
+      internalID: 103851161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight4
+      name: RobesWalkingRight4
       rect:
         serializedVersion: 2
-        x: 217
-        y: 82
-        width: 17
-        height: 23
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93d3ddbed3646c24faba1471a3a4f425
-      internalID: -2083082415
+      spriteID: de68458722fefca409885aa3d2758083
+      internalID: 1925050398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight5
+      name: RobesWalkingRight5
       rect:
         serializedVersion: 2
-        x: 279
-        y: 82
-        width: 17
-        height: 23
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11afec981305f2b469c408ae627e63fd
-      internalID: -1436689724
+      spriteID: c50381091610a644fa397140b48a09b8
+      internalID: -376628283
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight6
+      name: RobesWalkingRight6
       rect:
         serializedVersion: 2
-        x: 342
-        y: 82
-        width: 19
-        height: 20
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 465aea95092a2a245a3a452b20941843
-      internalID: 929488479
+      spriteID: 82f992de36fc81746a7c4164446281d0
+      internalID: -136295567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft1
+      name: RobesWalkingLeft1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 19
-        width: 16
-        height: 20
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3455998092ffeae4ca4e3c2d97da5659
-      internalID: 220058987
+      spriteID: 5b368174bf0f55043aef9e45a5fac255
+      internalID: 1787832887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft2
+      name: RobesWalkingLeft2
       rect:
         serializedVersion: 2
-        x: 87
-        y: 18
-        width: 16
-        height: 22
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba82e584bf836c64e9d734be0183d63c
-      internalID: -52325502
+      spriteID: ef6f56b160a455a4d81d4f1ee4777aa3
+      internalID: 549222343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft3
+      name: RobesWalkingLeft3
       rect:
         serializedVersion: 2
-        x: 151
-        y: 18
-        width: 16
-        height: 21
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0251449d525028e4bb542f4878ec6007
-      internalID: -453742283
+      spriteID: 0310d2a5f04be10458090024fdfa323a
+      internalID: -231081439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft4
+      name: RobesWalkingLeft4
       rect:
         serializedVersion: 2
-        x: 215
-        y: 18
-        width: 16
-        height: 22
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e02d61ff282b8f1489efa55d9fd6cc89
-      internalID: -290793995
+      spriteID: d840d57a931c20845826d0024cc9f332
+      internalID: -598059371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft5
+      name: RobesWalkingLeft5
       rect:
         serializedVersion: 2
-        x: 279
-        y: 18
-        width: 18
-        height: 22
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54d673998fbb5bf4aa1efcbcb6f39d6c
-      internalID: -1333604696
+      spriteID: 2ea766be665022d409d24ff1f8f29cca
+      internalID: 905563203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft6
+      name: RobesWalkingLeft6
       rect:
         serializedVersion: 2
-        x: 340
-        y: 18
-        width: 24
-        height: 22
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68445a6bef96cc34fbe1ebca411fa662
-      internalID: -1526269417
+      spriteID: cdb0e5b288dc08247a407dda50d61ed5
+      internalID: -414429486
       vertices: []
       indices: 
       edges: []
@@ -725,6 +725,34 @@ TextureImporter:
       IddleRobeFront: -1950931700
       IddleRobeLeft: -314096018
       IddleRobeRight: -770183548
+      RobesBack: 1389800442
+      RobesFront: -1962879817
+      RobesLeft: 979023412
+      RobesRight: 119487990
+      RobesWalkingBack1: 2054400701
+      RobesWalkingBack2: 865455151
+      RobesWalkingBack3: 1784848583
+      RobesWalkingBack4: -579156429
+      RobesWalkingBack5: 456739876
+      RobesWalkingBack6: 1372066876
+      RobesWalkingFront1: 1950522643
+      RobesWalkingFront2: 371075715
+      RobesWalkingFront3: -1287774614
+      RobesWalkingFront4: -2106428519
+      RobesWalkingFront5: -846269162
+      RobesWalkingFront6: 1039392687
+      RobesWalkingLeft1: 1787832887
+      RobesWalkingLeft2: 549222343
+      RobesWalkingLeft3: -231081439
+      RobesWalkingLeft4: -598059371
+      RobesWalkingLeft5: 905563203
+      RobesWalkingLeft6: -414429486
+      RobesWalkingRight1: 1909992787
+      RobesWalkingRight2: -569953600
+      RobesWalkingRight3: 103851161
+      RobesWalkingRight4: 1925050398
+      RobesWalkingRight5: -376628283
+      RobesWalkingRight6: -136295567
       WalkDown1: 1579330753
       WalkDown2: 1045325302
       WalkDown3: -1187076968

@@ -13,6 +13,5 @@ public class ClothesData : ScriptableObject
     public Sprite icon;
     public GameObject clothes;
     public int goldCost;
-    public Vector3 clothesSpriteOffset;
     
 }

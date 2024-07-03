@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\DialogueInteractable.cs" />
     <Compile Include="Assets\Scripts\Shopkeeper.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\ClothesInventory.cs" />
+    <Compile Include="Assets\Scripts\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\ShopManager.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Scripts\Scriptable Scripts\ClothesData.cs" />

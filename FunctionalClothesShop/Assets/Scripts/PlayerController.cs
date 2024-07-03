@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
     //Keeps the timer for the interaction period after the player inputs Space
     private Coroutine interactTimer;
 
+    public InventoryManager inventoryManager;
 
 
     // Start is called before the first frame update
@@ -67,6 +68,11 @@ public class PlayerController : MonoBehaviour
         {
             checkColliderForInteraction = true;
             interactTimer = StartCoroutine(InteractionTimer());
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventoryManager.OpenInventory();
         }
 
 
@@ -119,7 +125,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    private void PlayerMovement(Vector2 moveDir)
+    public void PlayerMovement(Vector2 moveDir)
     {
         animator.SetFloat("MoveX", moveDir.x);
         animator.SetFloat("MoveY", moveDir.y);

@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IddleDown
+      name: PlayerFront
       rect:
         serializedVersion: 2
-        x: 24
-        y: 467
-        width: 16
-        height: 31
+        x: 0
+        y: 448
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee0c4e98ac2693b49970b34dbf01d632
-      internalID: -848545974
+      spriteID: 55c2c167ab2f30140a64715c1a1d6d1d
+      internalID: 1434383138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk
+      name: PlayerBack
       rect:
         serializedVersion: 2
-        x: 23
-        y: 210
-        width: 16
-        height: 31
+        x: 0
+        y: 384
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a29a5c12e9ee149a2e96388bc73ccf
-      internalID: -1701553999
+      spriteID: f02d5c909d2f2e0498959e4c610e9b39
+      internalID: 448911625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp2
+      name: PlayerRight
       rect:
         serializedVersion: 2
-        x: 88
-        y: 146
-        width: 17
-        height: 31
+        x: 0
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba350c3ae4a5f61439d0c16d08f09caf
-      internalID: 1516905830
+      spriteID: 2bad8b74502ffcc48b8ffb3e2273d987
+      internalID: 245627677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk3
+      name: PlayerLeft
       rect:
         serializedVersion: 2
-        x: 152
-        y: 210
-        width: 16
-        height: 31
+        x: 0
+        y: 256
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9657cb8017e13c4d8933b0889b0e6a9
-      internalID: 37226208
+      spriteID: 61ca84034399ad447a98a72253e87436
+      internalID: -874475148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk4
+      name: PlayerWalkingFront1
       rect:
         serializedVersion: 2
-        x: 217
-        y: 210
-        width: 16
-        height: 31
+        x: 0
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7648fd32c80f7dc43ad25dd1d8502fd0
-      internalID: -294362811
+      spriteID: e0672c14793a271409bd881cfe6f3a44
+      internalID: -915256330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk5
+      name: PlayerWalkingFront2
       rect:
         serializedVersion: 2
-        x: 280
-        y: 210
-        width: 16
-        height: 31
+        x: 64
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beeadc3d79b8fab4da9297a6062699bd
-      internalID: 1610472529
+      spriteID: c13a1f6bdd95b8e46b56599a34aa8a78
+      internalID: -1855019892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk6
+      name: PlayerWalkingFront3
       rect:
         serializedVersion: 2
-        x: 343
-        y: 210
-        width: 16
-        height: 31
+        x: 128
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7648dd90f35054541bf40882874037c3
-      internalID: -2066305863
+      spriteID: d5ea416afaaadd943a1f58f4afe47499
+      internalID: 98386275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp1
+      name: PlayerWalkingFront4
       rect:
         serializedVersion: 2
-        x: 24
-        y: 146
-        width: 16
-        height: 31
+        x: 192
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,20 +284,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1fdfd2c71464d4409a32d9412458791
-      internalID: -2131565073
+      spriteID: ece0727c6a4f64a4a82e85937b3d959a
+      internalID: 1815028453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_a_p1_0bas_humn_v01_2
+      name: PlayerWalkingFront5
       rect:
         serializedVersion: 2
-        x: 24
-        y: 146
-        width: 16
-        height: 31
+        x: 257
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c40d655b9c23e3341aaf1c9f19175c7f
-      internalID: 1890801377
+      spriteID: 85eb7b0ff9a24904e90e560a0af94dc3
+      internalID: 1914351169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp3
+      name: PlayerWalkingFront6
       rect:
         serializedVersion: 2
-        x: 151
-        y: 146
-        width: 17
-        height: 31
+        x: 320
+        y: 192
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +326,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f646f8b0e19af5e4089bb574977a721c
-      internalID: 501387196
+      spriteID: 2a692066b070e704e9fc808162a68f03
+      internalID: -1996753503
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp4
+      name: PlayerWalkingBack1
       rect:
         serializedVersion: 2
-        x: 215
-        y: 147
-        width: 17
-        height: 31
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,20 +347,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88b3804f165a984f8b5055970ea6b23
-      internalID: 1217954516
+      spriteID: b8dce18fe1555154aba6e37b5479c815
+      internalID: -210867714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk2
+      name: PlayerWalkingBack2
       rect:
         serializedVersion: 2
-        x: 87
-        y: 210
-        width: 17
-        height: 31
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,20 +368,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2959077ebbe233646b39cfae77d996f0
-      internalID: 1627325016
+      spriteID: 6f9693a1f3561c1478840cb36e5afc77
+      internalID: 447744036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp5
+      name: PlayerWalkingBack3
       rect:
         serializedVersion: 2
-        x: 279
-        y: 147
-        width: 17
-        height: 31
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,20 +389,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01460c53c0aed584d83a1865f7265357
-      internalID: 98884562
+      spriteID: 95670e6976a51d043bce9bbca3e2e1a1
+      internalID: 1670091791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkUp6
+      name: PlayerWalkingBack4
       rect:
         serializedVersion: 2
-        x: 344
-        y: 147
-        width: 17
-        height: 31
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,20 +410,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38ed0ba644ddad54eaa106e68fd1a6cd
-      internalID: 1111752557
+      spriteID: e454766f89cdbb44a8392602b7c668d3
+      internalID: -1518203113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight1
+      name: PlayerWalkingBack5
       rect:
         serializedVersion: 2
-        x: 23
-        y: 83
-        width: 17
-        height: 31
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,20 +431,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c620f41d7713f34da765d7cd8ed136b
-      internalID: 2094845748
+      spriteID: 3aaacdbb040487546a34e434dfc409dd
+      internalID: 785547428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight2
+      name: PlayerWalkingBack6
       rect:
         serializedVersion: 2
-        x: 88
-        y: 83
-        width: 17
-        height: 31
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -452,20 +452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba5c3fe83a3f7a242b9e157125ac4d51
-      internalID: -1484328316
+      spriteID: 0c1179f80fc861f4f92778a1400f5505
+      internalID: -1196037977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight3
+      name: PlayerWalkingRight1
       rect:
         serializedVersion: 2
-        x: 153
-        y: 83
-        width: 17
-        height: 31
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -473,20 +473,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9ec693acc7872e4794fe1f5eb6c7cc5
-      internalID: -907456017
+      spriteID: 5efa27d56bc925f4a8d07a703a64fd0a
+      internalID: 2117627918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight4
+      name: PlayerWalkingRight2
       rect:
         serializedVersion: 2
-        x: 216
-        y: 83
-        width: 17
-        height: 31
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -494,20 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5b172e63ae93214884d3766b75bc945
-      internalID: 2022493161
+      spriteID: 9b014ceb79b7ddd429881fb53e33d9b8
+      internalID: 2124582555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight5
+      name: PlayerWalkingRight3
       rect:
         serializedVersion: 2
-        x: 280
-        y: 83
-        width: 17
-        height: 31
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -515,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d8180220368f4b4cb284c9edc8d8eb8
-      internalID: -1605173572
+      spriteID: 4d9a0603547e4574b9b4ab3a62b27e3b
+      internalID: -1993535816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight6
+      name: PlayerWalkingRight4
       rect:
         serializedVersion: 2
-        x: 343
-        y: 82
-        width: 17
-        height: 31
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +536,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ecf06596115e4646806014af8f90963
-      internalID: 563168102
+      spriteID: f470659020586e7498306468f60d4926
+      internalID: 727268315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft1
+      name: PlayerWalkingRight5
       rect:
         serializedVersion: 2
-        x: 23
-        y: 19
-        width: 17
-        height: 31
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,20 +557,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eddd3f276e2b7eb459242634c87b0f64
-      internalID: -1839937987
+      spriteID: a7602af77189b5d46917f64d74ab7874
+      internalID: 1956247116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft2
+      name: PlayerWalkingRight6
       rect:
         serializedVersion: 2
-        x: 87
-        y: 19
-        width: 17
-        height: 31
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +578,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 250e38e578e9c0240908df7753463f5f
-      internalID: -2008403536
+      spriteID: 38ba4030da90f124da3da1316e2191b6
+      internalID: 104884101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft3
+      name: PlayerWalkingLeft1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 18
-        width: 17
-        height: 31
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -599,20 +599,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff1d64b1e2ed0a4c86f2a485793c4a5
-      internalID: 2061808089
+      spriteID: 4b544ac94cb9ede4bbba09ff2735a2e7
+      internalID: 120634349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft4
+      name: PlayerWalkingLeft2
       rect:
         serializedVersion: 2
-        x: 215
-        y: 19
-        width: 17
-        height: 31
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -620,20 +620,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f5d3359137b834498b340fc1b540ad6
-      internalID: 762882505
+      spriteID: 7851c2f49077a7a47ba2e85457c8f1c1
+      internalID: 542861580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft5
+      name: PlayerWalkingLeft3
       rect:
         serializedVersion: 2
-        x: 279
-        y: 19
-        width: 17
-        height: 31
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -641,20 +641,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4e6b395980de08428322d90ad7025de
-      internalID: -203027859
+      spriteID: 0d0a86dfa4450724daebb96414c05476
+      internalID: -1534659982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkLeft6
+      name: PlayerWalkingLeft4
       rect:
         serializedVersion: 2
-        x: 343
-        y: 19
-        width: 17
-        height: 31
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,20 +662,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bda2705cbefb55a4ba7929788f0f50f9
-      internalID: 1223328891
+      spriteID: 14f91979fabe5574393aa73f9f5b2a6b
+      internalID: -421890260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IddleUp
+      name: PlayerWalkingLeft5
       rect:
         serializedVersion: 2
-        x: 24
-        y: 404
-        width: 16
-        height: 31
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -683,20 +683,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16120885c6b7d9e4d96c3630702dba08
-      internalID: -663914025
+      spriteID: ad63fd3e9c873a04ba204c6cf1a036e5
+      internalID: -1111646277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IddleRight
+      name: PlayerWalkingLeft6
       rect:
         serializedVersion: 2
-        x: 24
-        y: 339
-        width: 16
-        height: 31
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,29 +704,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 169998ffe984e144dbd571e19a4b3a18
-      internalID: -1549821237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IddleLeft
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 275
-        width: 16
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9842e1d46d9f5ef4faf0606bf5e9128e
-      internalID: -529948393
+      spriteID: 11e5d5636f089514395224ff14e45df2
+      internalID: 392573389
       vertices: []
       indices: 
       edges: []
@@ -746,6 +725,34 @@ TextureImporter:
       IddleLeft: -529948393
       IddleRight: -1549821237
       IddleUp: -663914025
+      PlayerBack: 448911625
+      PlayerFront: 1434383138
+      PlayerLeft: -874475148
+      PlayerRight: 245627677
+      PlayerWalkingBack1: -210867714
+      PlayerWalkingBack2: 447744036
+      PlayerWalkingBack3: 1670091791
+      PlayerWalkingBack4: -1518203113
+      PlayerWalkingBack5: 785547428
+      PlayerWalkingBack6: -1196037977
+      PlayerWalkingFront1: -915256330
+      PlayerWalkingFront2: -1855019892
+      PlayerWalkingFront3: 98386275
+      PlayerWalkingFront4: 1815028453
+      PlayerWalkingFront5: 1914351169
+      PlayerWalkingFront6: -1996753503
+      PlayerWalkingLeft1: 120634349
+      PlayerWalkingLeft2: 542861580
+      PlayerWalkingLeft3: -1534659982
+      PlayerWalkingLeft4: -421890260
+      PlayerWalkingLeft5: -1111646277
+      PlayerWalkingLeft6: 392573389
+      PlayerWalkingRight1: 2117627918
+      PlayerWalkingRight2: 2124582555
+      PlayerWalkingRight3: -1993535816
+      PlayerWalkingRight4: 727268315
+      PlayerWalkingRight5: 1956247116
+      PlayerWalkingRight6: 104884101
       Walk: -1701553999
       Walk2: 1627325016
       Walk3: 37226208

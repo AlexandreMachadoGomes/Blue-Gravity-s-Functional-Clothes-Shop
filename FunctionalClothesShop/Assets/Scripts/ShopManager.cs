@@ -64,6 +64,7 @@ public class ShopManager : MonoBehaviour
                                     buttonObj.transform.GetChild(0).GetComponent<Image>().color = item.clothes.GetComponent<SpriteRenderer>().color;
                                     buttonObj.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = item.goldCost/2 +  "  Gold";
                                     buttonObj.GetComponentInChildren<Button>().onClick.AddListener(() => SellClothes(item));
+                                    buttonObj.transform.GetChild(2).gameObject.SetActive(true);
 
                                     alreadyHaveTheClothes = true;
                                 }
