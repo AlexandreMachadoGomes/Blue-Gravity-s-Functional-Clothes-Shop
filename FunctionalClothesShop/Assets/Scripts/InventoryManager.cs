@@ -23,16 +23,19 @@ public class InventoryManager : MonoBehaviour
 
     public void EquipClothes(ClothesData clothes)
     {
-        PopulateInventory(clothes.slotType);
+        
 
         for (int i = 0; i < player.clothesSlotsData.Count; i++)
         {
             if (player.clothesSlotsData[i].slotType == clothes.slotType)
             {
                 player.clothesSlotsData[i].ChangeCurrentClothesSlot(clothes);
+                PopulateInventory(clothes.slotType);
                 return;
             }
         }
+
+        
     }
 
     public void UnequipClothes(ClothesData clothes)
@@ -47,7 +50,7 @@ public class InventoryManager : MonoBehaviour
     }
 
 
-    private void PopulateInventory(SlotTypes slotType)
+    public void PopulateInventory(SlotTypes slotType)
     {
         CleanItemsFromShop();
 

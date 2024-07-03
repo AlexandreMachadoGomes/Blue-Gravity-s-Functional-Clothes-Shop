@@ -27,6 +27,8 @@ public class ClothesTypeDataManager : MonoBehaviour
 
     public ClothesData initialClothes;
 
+    public InventoryManager inventoryManager;
+
 
 
     void Start()
@@ -51,11 +53,12 @@ public class ClothesTypeDataManager : MonoBehaviour
 
     public void RemoveClothes(ClothesData clothes)
     {
+        availableClothing.Remove(clothes);
         if (currentClothesData == clothes)
         {
             ChangeCurrentClothesSlot(initialClothes);
         }
-        availableClothing.Remove(clothes);
+        
     }
 
     //destroys the previous instance of clothing of its slot and creates a new instance of the new clothing
@@ -64,6 +67,8 @@ public class ClothesTypeDataManager : MonoBehaviour
 
         if (availableClothing.Contains(clothes) || clothes == initialClothes)
         {
+            currentClothesData = clothes;
+
             if (currentClothes != null)
             {
                 Destroy(currentClothes);
@@ -72,12 +77,14 @@ public class ClothesTypeDataManager : MonoBehaviour
 
 
             currentClothes = Instantiate(clothes.clothes, player.position, Quaternion.identity);
-            currentClothesData = clothes;
+            
             currentClothes.transform.parent = player;
             clothesAnimator = currentClothes.GetComponent<Animator>();
             clothesSpriteRenderer = currentClothes.GetComponent<SpriteRenderer>();
             player.GetComponent<PlayerController>().PlayerMovement(Vector2.down);
             player.GetComponent<PlayerController>().PlayerMovement(Vector2.zero);
+
+            inventoryManager.PopulateInventory(clothes.slotType);
         }
     }
 
